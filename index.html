@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+
+		<title>float</title>
+	 	<style type="text/css">
+
+	 	     *, *:after, *:before{
+	 	         box-sizing: border-box;
+
+	 	    }
+	 	    
+	 	    [class*='col-']{
+	 	          float: left;
+	 	          min-height: 200px;
+	 	          padding-right: 20px;
+
+	 	    }
+
+	 	    [class*='col-']:last-of-type{
+	 	         padding-right: 0;
+
+	 	    }
+	 	    
+	 	    .grid{ 
+	 	        margin: 15px 0; 
+
+	 	    }
+
+	 	    /* css float fixed */
+	 	    .grid:after, .grid:before{  
+	 	        content: '';
+	 	        clear: both;
+	 	        display: table; 
+
+	 	    }  
+
+	 	    .col-20{
+	 	        width: 20%;
+
+	 	    }
+
+	 	    .col-25{
+	 	    	width: 25%;
+
+	 	    }
+
+	 	    .col-30{
+	 	    	width: 30%;
+
+	 	    }
+
+	 	    .col-33{
+	 	         width: calc(100% / 3);
+
+	 	    }
+
+	 	    .col-35{
+	 	          width: calc(100% /12);
+
+	 	    }
+
+	 	    .col-45{
+	 	    	width: 45%;
+
+	 	    }               
+	 	    
+	 	    .col-80{
+	 	        width: 80%;
+
+	 	    }
+
+	 	    .box{  
+	 	    	background: #eee;
+	 	    	width: 100%;
+	 	    	height: 200px;
+
+	 	    }
+
+	 	    .grid-pad [class*='col-']{
+	 	    	padding: 0 15px;
+	 	    }
+
+	 	    @media (max-width: 475px){
+	 	    	[class*='col-']{
+	 	    		width: 100%;
+	 	    		padding-right: 0;
+	 	    		margin-bottom: 15px;
+	 	    	}
+	 	    		
+	 	    }	
+	 	    
+
+	 	</style>
+	</head>
+	<body>             
+
+	    <div class="container">
+	    	
+	      	<div class="grid">
+
+	      		<div class="col-20">
+
+	      			<div class="box">A</div>
+	      		</div>
+
+	      		<div class="col-80">
+
+	      			<div class="box">B</div>
+	      		</div>
+
+	      	</div>
+              
+            <div class="grid">
+              	<div class="col-33">
+
+              		<div class="box">A</div>
+              	</div>
+              	<div class="col-33">
+
+              		<div class="box">B</div>
+              		
+              	</div>
+              	<div class="col-33">
+              		<div class="box">C</div>
+              	</div>
+            </div>
+	              		
+	       <div class="grid">
+		       	<div class="col-35">
+		       		<div class="box">A</div>
+		       	</div> 
+
+		       <div class="col-35">
+		       		<div class="box">B</div>
+		       </div>
+
+		       <div class="col-35">
+		       		<div class="box">C</div>
+		       </div>
+
+		       <div class="col-35">
+		       		<div class="box">D</div>
+		       </div> 
+
+		       <div class="col-35">
+		       		<div class="box">E</div>
+		       </div>
+
+		       <div class="col-35">
+		       		<div class="box">F</div>
+		       </div> 
+
+		       <div class="col-35">
+		       		<div class="box">G</div>
+		       </div> 
+
+		       <div class="col-35">
+		       		<div class="box">H</div>
+		       </div>
+
+		       <div class="col-35">
+		       		<div class="box">I</div>
+		       </div>
+
+		       <div class="col-35">
+		       		<div class="box">J</div>
+		       </div> 
+
+		       <div class="col-35">
+		       		<div class="box">K</div>
+		       </div>
+
+		       <div class="col-35">
+		       		<div class="box">L</div>
+		       </div>	 
+	    	</div>
+
+	    	<div class="grid">
+		       	<div class="col-25">
+		       		<div class="box">A</div>
+		       </div>
+
+	        
+		       	<div class="col-30">
+		       		<div class="box">B</div>
+		       </div> 
+
+	        
+		       	<div class="col-45">
+		       		<div class="box">C</div>
+		       </div>	        	
+	        </div>
+
+       	    <div class="grid grid-pad">
+       			<div class="col-50">
+       				<div class="box"></div>	
+       			</div>
+
+       			<div class="col-50">
+       				<div class="box"></div>	
+       			</div>
+	       				
+	       </div>     	      
+  	      
+	    </div>
+	 
+	</body>
+</html>
